@@ -10,6 +10,7 @@ class mi{
 		System.out.println("Type in number to select:");
 		System.out.println("1) Get a mi name");
 		System.out.println("2) Feel like eating something");
+		System.out.println("3) Feel like going somewhere");
 		int sel = Integer.parseInt(scan.nextLine());
 
 		if(sel == 1){
@@ -20,6 +21,9 @@ class mi{
 		if(sel == 2){
 			generateEat(scan);
 		}
+		if(sel == 3) {
+			generatePlace(scan);
+		}
 	}
 
 	public static void generateEat(Scanner scan){
@@ -29,6 +33,12 @@ class mi{
 			System.out.println("想喝点什么?");
 			String drink = scan.nextLine();
 			System.out.println("(*￣︶￣*)  搞杯"+drink+"喝喝 ! ");
+	}
+	
+	public static void generatePlace(Scanner scan){
+			System.out.println("想吃点什么?");
+			String place = scan.nextLine();
+			System.out.println("(*￣︶￣*)  要去"+ place +"啦？");
 	}
 
 	public static String generateString(int num){
