@@ -36,7 +36,7 @@ class mi{
 	}
 	
 	public static void generatePlace(Scanner scan){
-			System.out.println("想吃点什么?");
+			System.out.println("想去哪里?");
 			String place = scan.nextLine();
 			System.out.println("(*￣︶￣*)  要去"+ place +"啦？");
 	}
